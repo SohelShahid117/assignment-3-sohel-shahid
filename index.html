@@ -97,7 +97,7 @@
     <header>
         <!-- <h1 class="text-5xl font-bold text-orange-500">Assignment-3-Professional Hockey's</h1> -->
         <!-- navbar -->
-        <div class="container mx-auto w-[85%]">
+        <div class="container mx-auto w-[100%] lg:w-[85%]">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -109,7 +109,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 sm:hidden">
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -117,7 +117,8 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Professional <span class="text-[#FF4240;]">Hockey's</span></a>
+                    <a class="lg:hidden" href=""><img src="./assets/images/hamburger.svg" alt=""></a>
+                    <a class="btn btn-ghost text-xl"><span class="text-[#FF4240;]">Hockey's</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -128,17 +129,17 @@
                         <li><a>Contact</a></li>
                 </div>
                 <div class="navbar-end">
-                    <img class="mr-5" src="./assets/images/search.svg" alt="">
-                    <a class="btn bg-[#FF4240] rounded-lg]">Button</a>
+                    <img class="mr-5 hidden" src="./assets/images/search.svg" alt="">
+                    <a class="btn bg-[#FF4240] rounded-lg text-white font-bold py-4 px-8">Get Ticket</a>
                 </div>
             </div>
         </div>
 
         <!-- carousel -->
-        <div class="container mx-auto w-[85%] mt-5">
+        <div class="container mx-auto w-[100%] flex flex-col lg:w-[85%] mt-5">
             <div class="carousel w-full">
                 <div id="slide1"
-                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(./assets/images/1.png)] h-[80vh] rounded-xl items-center justify-center">
+                    class="carousel-item relative w-full bg-[url(./assets/images/1.png)] h-[80vh] rounded-xl items-center justify-center">
 
                     <!-- class="carousel-item relative w-full bg-[url(https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg)]"> -->
                     <!-- <div>
@@ -176,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[460px] h-[120px] bg-black mx-auto rounded-xl -translate-y-40 translate-x-48 space-y-4 mt-4 pl-4 text-white">
+            <div class="w-[460px] h-[120px] bg-black mx-auto rounded-xl lg:-translate-y-40 lg:translate-x-48 space-y-4 my-10 lg:mt-4 pl-4 text-white">
                 <h1 class="pt-4  text-2xl font-extrabold">
                     Meet all the heroes from the field
                 </h1>
@@ -189,15 +190,16 @@
         <!-- Professional Hockeys Club -->
         <section class="container mx-auto w-[85%]">
             <div class="w-[70%] text-center mx-auto">
-                <h1 class="text-3xl font-bold opacity-9 text-[#131318] mb-5">Professional Hockeys Club</h1>
+                <h1 class="text-2xl lg:text-3xl font-bold opacity-9 text-[#131318] mb-5">Professional Hockeys Club</h1>
                 <p class="text-lg text-[rgba(19, 19, 24, 0.60)] opacity-70">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
         </section>
 
         <!-- radial progress -->
         <section class="container mx-auto w-[85%] mt-16">
-            <div class="flex justify-center items-center">
-                <div class="text-center flex flex-col justify-center items-center w-[23%]">
+            <div class="flex lg:flex-row flex-col justify-center items-center">
+
+                <div class="text-center flex flex-col justify-center items-center lg:w-[23%]">
                     <div class="radial-progress text-[#FF4240] mb-5" style="--value:87;" role="progressbar">
                         <h1 class="text-black text-xl font-bold">87%</h1>
                     </div>
@@ -208,7 +210,7 @@
                 </div>
 
                 <div class="text-center flex flex-col justify-center items-center w-[23%]">
-                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">
+                    <div class="radial-progress text-[#49D293] mb-5" style="--value:95;" role="progressbar">
                         <h1 class="text-black text-xl font-bold">95%</h1>
                     </div>
                     <div class="space-y-3">
@@ -218,7 +220,7 @@
                 </div>
 
                 <div class="text-center flex flex-col justify-center items-center w-[23%]">
-                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">
+                    <div class="radial-progress text-[#FFB546] mb-5" style="--value:90;" role="progressbar">
                         <h1 class="text-black text-xl font-bold">90%</h1>
                     </div>
                     <div class="space-y-3">
@@ -228,7 +230,7 @@
                 </div>
 
                 <div class="text-center flex flex-col justify-center items-center w-[23%]">
-                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">
+                    <div class="radial-progress text-[#4C8DF1] mb-5" style="--value:80;" role="progressbar">
                         <h1 class="text-black text-xl font-bold">80%</h1>
                     </div>
                     <div class="space-y-3">
@@ -247,12 +249,12 @@
             </div>
 
             <div class="mt-8">
-                <div class="flex gap-5">
+                <div class="flex lg:flex-row flex-col gap-5">
                         <div class="card w-96 image-full">
                             <figure><img src="./assets/images/2.png" alt="Shoes" /></figure>
                             <div class="card-body">
                               <div class="space-y-4 pt-16">
-                                <h2 class="card-title text-lg font-bold">Professional Program</h2>
+                                <h2 class="card-title text-lg font-bold">Junior Program</h2>
                                 <p class="text-sm from-neutral-50">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
                                     enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                               </div>
@@ -266,7 +268,7 @@
                             <figure><img src="./assets/images/3.png" alt="Shoes" /></figure>
                             <div class="card-body">
                                <div class="space-y-4 pt-16">
-                                <h2 class="card-title text-lg font-bold">Professional Program</h2>
+                                <h2 class="card-title text-lg font-bold">Teenager Program</h2>
                                 <p class="text-sm from-neutral-50">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
                                     enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                                </div>
@@ -305,10 +307,12 @@
                 <p class="text-lg text-[rgba(19, 19, 24, 0.60)] opacity-70">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
             <div class="mt-10 space-y-5">
-                <div class="flex gap-5">
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/5.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
+                <div class="flex lg:flex-row flex-col gap-5">
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
+                        </div>
+                        <div class="space-y-2 lg:h-[160px] h-auto">
                             <p class="text-gray-300 font-light text-xs space-x-2">
                                 <span><i class="fa-solid fa-star text-orange-400"></i></span>
                                 <span>5.00</span>
@@ -319,39 +323,17 @@
                             </p>
                             <h2 class="text-lg font-bold">World Cup Flags Football</h2>
                             <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
                                 <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
-                            </p>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/6.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
-                            <p class="text-gray-300 font-light text-xs space-x-2">
-                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
-                                <span>5.00</span>
-                                <span><i class="fa-regular fa-eye"></i></span>
-                                <span>20</span>
-                                <span><i class="fa-regular fa-heart"></i></span>
-                                <span>200</span>
-                            </p>
-                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
-                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
-                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
-                            </p>
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
                         </div>
-                    </div>
-                </div>
-
-                <div class="flex gap-5">
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/7.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
+                        <div class="space-y-2 lg:h-[160px] h-auto">
                             <p class="text-gray-300 font-light text-xs space-x-2">
                                 <span><i class="fa-solid fa-star text-orange-400"></i></span>
                                 <span>5.00</span>
@@ -362,59 +344,19 @@
                             </p>
                             <h2 class="text-lg font-bold">World Cup Flags Football</h2>
                             <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
                                 <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/8.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
-                            <p class="text-gray-300 font-light text-xs space-x-2">
-                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
-                                <span>5.00</span>
-                                <span><i class="fa-regular fa-eye"></i></span>
-                                <span>20</span>
-                                <span><i class="fa-regular fa-heart"></i></span>
-                                <span>200</span>
-                            </p>
-                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
-                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
-                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
-                            </p>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex gap-5">
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/9.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
-                            <p class="text-gray-300 font-light text-xs space-x-2 space-x-2">
-                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
-                                <span>5.00</span>
-                                <span><i class="fa-regular fa-eye"></i></span>
-                                <span>20</span>
-                                <span><i class="fa-regular fa-heart"></i></span>
-                                <span>200</span>
-                            </p>
-                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
-                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
-                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
-                            </p>
+                <div class="flex lg:flex-row flex-col gap-5">
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
                         </div>
-                    </div>
-                    <div class="flex flex-1 gap-3 border-gray-50 h-[160px] shadow bg-white-100 rounded-lg pt-5 pl-2">
-                        <div class="h-[160px]"><img src="./assets/images/10.png" alt=""></div>
-                        <div class="space-y-2 h-[160px]">
+                        <div class="space-y-2 lg:h-[160px] h-auto">
                             <p class="text-gray-300 font-light text-xs space-x-2">
                                 <span><i class="fa-solid fa-star text-orange-400"></i></span>
                                 <span>5.00</span>
@@ -425,11 +367,78 @@
                             </p>
                             <h2 class="text-lg font-bold">World Cup Flags Football</h2>
                             <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
-                            <p class="text-gray-300 font-light text-xs">
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
                                 <span class="text-[#FF4240] font-bold">Price - $22.00</span>
-                                <span><i class="fa-solid fa-cart-shopping"></i></span>
-                                <span>Delivery Fee : Free</span>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
+                        </div>
+                        <div class="space-y-2 lg:h-[160px] h-auto">
+                            <p class="text-gray-300 font-light text-xs space-x-2">
+                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                                <span>5.00</span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                                <span>20</span>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span>200</span>
                             </p>
+                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
+                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
+                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row flex-col gap-5">
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
+                        </div>
+                        <div class="space-y-2 lg:h-[160px] h-auto">
+                            <p class="text-gray-300 font-light text-xs space-x-2">
+                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                                <span>5.00</span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                                <span>20</span>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span>200</span>
+                            </p>
+                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
+                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
+                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-1 lg:flex-row flex-col gap-3 border-gray-50 lg:h-[160px] h-auto shadow bg-white-100 rounded-lg pt-5 pl-2">
+                        <div class="lg:h-[160px] h-auto">
+                            <img class="w-[100%] p-2" src="./assets/images/5.png" alt="">
+                        </div>
+                        <div class="space-y-2 lg:h-[160px] h-auto">
+                            <p class="text-gray-300 font-light text-xs space-x-2">
+                                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                                <span>5.00</span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                                <span>20</span>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span>200</span>
+                            </p>
+                            <h2 class="text-lg font-bold">World Cup Flags Football</h2>
+                            <p class="text-gray-300 font-light text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo?</p>
+                            <div class="flex lg:flex-row flex-col text-gray-300 font-light text-xs">
+                                <span class="text-[#FF4240] font-bold">Price - $22.00</span>
+                                <p><i class="fa-solid fa-cart-shopping"><span class="ml-2">Delivery Fee : Free</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                         </div>
                     </div>
                 </div>
